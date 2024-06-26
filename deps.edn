@@ -1,0 +1,4 @@
+{:paths ["src"]
+ :deps  {com.clojure-goes-fast/clj-async-profiler {:mvn/version "1.2.0"}}
+ :aliases {:connect {:jvm-opts ["-Djdk.attach.allowAttachSelf"]
+                     :exec-fn  profiler/run-profile}}}
